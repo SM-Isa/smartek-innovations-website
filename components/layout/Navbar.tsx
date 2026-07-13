@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="border-b bg-background/80 backdrop-blur-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-primary hover:opacity-90 transition-opacity">
-          <Building2 size={24} className="text-amber-500" /> SMARTEK
+          <Building2 size={24} className="text-amber-500" /> SMARTBRIDGE
         </Link>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">

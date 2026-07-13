@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <FadeIn>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">Smartek Innovations</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">SmartBridge Apex Solutions Ltd</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               We are a Nigerian technology company building smart management solutions for African institutions. Our mission is to digitize operations for schools, estates, and beyond — making them more efficient, transparent, and connected.
@@ -61,23 +61,23 @@ export default function AboutPage() {
             </div>
             <h2 className="text-3xl font-bold mb-8">Our Headquarters</h2>
             <div className="text-lg text-muted-foreground space-y-2 mb-10">
-              <p className="font-semibold text-foreground text-xl">Smartek Innovations Ltd</p>
-              <p>15 Adeola Odeku Street</p>
-              <p>Victoria Island, Lagos</p>
+              <p className="font-semibold text-foreground text-xl">SmartBridge Apex Solutions Ltd</p>
+              <p>5/6 Oke Ero Road Opposite Eid Road</p>
+              <p>Mandate 3 Estate Ilorin, Kwara  State</p>
               <p>Nigeria</p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-              <a href="mailto:hello@smartekinnovations.com" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors font-medium">
+              <a href="mailto:hello@workwithsmartbridge.com" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors font-medium">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                   <Mail size={20} />
                 </div>
-                hello@smartekinnovations.com
+                hello@workwithsmartbridge.com
               </a>
-              <a href="tel:+2348001234567" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors font-medium">
+              <a href="tel:+2348068569991" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors font-medium">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                   <Phone size={20} />
                 </div>
-                +234 800 123 4567
+                +2348068569991
               </a>
             </div>
           </FadeIn>
