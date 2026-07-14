@@ -67,9 +67,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-xl mb-3">Head Office</h3>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Smartek Innovations Ltd<br />
-                      15 Adeola Odeku Street<br />
-                      Victoria Island, Lagos<br />
+                      SmartBridge Apex Solutions Ltd<br />
+                      5/6 Oke Ero Road <br />
+                      mandate 3 Estate, Kwara<br />
                       Nigeria
                     </p>
                   </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                         <Mail size={24} />
                       </div>
-                      hello@smartekinnovations.com
+                      hello@workwithsmartbridge.com
                     </a>
                     <a href="tel:+2348001234567" className="flex items-center gap-4 text-lg hover:text-primary transition-colors group">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">

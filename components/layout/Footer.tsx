@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} SmartBridge Apex Solutions Ltd. All rights reserved.</p>
             <span className="hidden md:inline">•</span>
-            <p>Lagos, Nigeria</p>
+            <p>Kwara, Nigeria</p>
           </div>
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">

@@ -216,7 +216,7 @@ export default function Home() {
       <section className="py-24 bg-primary/5">
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
-            <h2 className="text-4xl font-bold text-center tracking-tight mb-16">Why Choose Smartek?</h2>
+            <h2 className="text-4xl font-bold text-center tracking-tight mb-16">Why Choose SmartBridge?</h2>
           </FadeIn>
           <StaggerContainer className="grid md:grid-cols-3 gap-8">
             <StaggerItem>
