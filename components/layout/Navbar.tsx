@@ -18,7 +18,7 @@ export default function Navbar() {
             </button>
             <div className="absolute top-full left-0 mt-2 w-48 bg-card border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <div className="p-2 flex flex-col">
-                <Link href="/products/schoolfee" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors">SchoolFee</Link>
+                <Link href="/products/schoolfee" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors">EduSuite</Link>
                 <Link href="/products/emis" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors">EMIS</Link>
                 <Link href="/products/estatecare" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors flex items-center justify-between">
                   EstateCare <span className="text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded">Soon</span>
