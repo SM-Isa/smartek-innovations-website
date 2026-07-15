@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SmartBridge Apex Solutions | Smart Technology for African Institutions",
+  title: "SmartBridge Apex Solutions | SmartBridge Apex Solutions for African Institutions",
   description: "Empowering schools and estates with intelligent management solutions.",
 };
 

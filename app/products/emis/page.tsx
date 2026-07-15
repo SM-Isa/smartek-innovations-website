@@ -164,7 +164,7 @@ export default function EMISPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Connects seamlessly with individual school nodes (like SchoolFee) and external government databases via secure APIs.
+                    Connects seamlessly with individual school nodes (like EduSuite) and external government databases via secure APIs.
                   </p>
                 </CardContent>
               </Card>

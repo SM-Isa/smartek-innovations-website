@@ -12,7 +12,7 @@ export default function SchoolFeePage() {
       {/* Breadcrumb */}
       <div className="bg-muted py-4 border-b">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-sm text-muted-foreground">
-          <Link href="/" className="hover:text-primary transition-colors">Home</Link> {'>'} Products {'>'} <span className="text-foreground font-medium">SchoolFee</span>
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link> {'>'} Products {'>'} <span className="text-foreground font-medium">SmartBridge EduSuite</span>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function SchoolFeePage() {
             <FadeIn delay={0.2} className="relative aspect-video lg:aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
               <Image 
                 src="/images/schoolfee-hero.jpg" 
-                alt="SchoolFee Dashboard"
+                alt="SmartBridge EduSuite Dashboard"
                 fill
                 className="object-cover"
                 priority
