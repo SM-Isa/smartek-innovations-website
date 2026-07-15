@@ -88,7 +88,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <GraduationCap size={28} />
                   </div>
-                  <CardTitle className="text-2xl">SchoolFee</CardTitle>
+                  <CardTitle className="text-2xl">EduSuite</CardTitle>
                   <CardDescription className="text-base">Complete School Management System</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
