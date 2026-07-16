@@ -40,7 +40,7 @@ export default function Home() {
           
           <FadeIn delay={0.1}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight drop-shadow-lg">
-              Smart Technology for <br className="hidden md:block" />
+              SmartBridge Apex Solutions for <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">African Institutions</span>
             </h1>
           </FadeIn>
