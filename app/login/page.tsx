@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { LockKeyhole, ArrowRight } from "lucide-react";
 
@@ -19,13 +18,24 @@ export default function LoginPage() {
         </p>
         
         <div className="grid gap-4 w-full">
-          <Link href="https://app.schoolfee.com" className={cn(buttonVariants({ size: "lg" }), "w-full text-lg h-14 shadow-lg shadow-primary/20 flex justify-between px-6 group")}>
-            <span>SchoolFee Portal</span>
+          <a 
+            href="https://test.smartbridgeedu.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={cn(buttonVariants({ size: "lg" }), "w-full text-lg h-14 shadow-lg shadow-primary/20 flex justify-between items-center px-6 group")}
+          >
+            <span>SmartBridgeEdu Portal</span>
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-          <Button variant="outline" size="lg" className="w-full text-lg h-14 opacity-70 cursor-not-allowed border-dashed bg-transparent">
-            EstateCare Portal (Soon)
-          </Button>
+          </a>
+          <a 
+            href="https://test.smarthouserent.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full text-lg h-14 border-amber-500/30 hover:bg-amber-500/10 text-foreground flex justify-between items-center px-6 group shadow-sm")}
+          >
+            <span>Proptech Portal</span>
+            <ArrowRight size={20} className="text-amber-500 group-hover:translate-x-1 transition-transform" />
+          </a>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ export default function ContactPage() {
           <FadeIn>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Get In Touch</h1>
             <p className="text-xl text-muted-foreground">
-              Whether you're interested in SmartBridge EduSuite, want to join the EstateCare waitlist, or just have a question — we'd love to hear from you.
+              Whether you&apos;re interested in SmartBridgeEdu, want to explore our Proptech solutions, or just have a question — we&apos;d love to hear from you.
             </p>
           </FadeIn>
         </div>

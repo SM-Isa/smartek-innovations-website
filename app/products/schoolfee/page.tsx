@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
@@ -12,7 +12,7 @@ export default function SchoolFeePage() {
       {/* Breadcrumb */}
       <div className="bg-muted py-4 border-b">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-sm text-muted-foreground">
-          <Link href="/" className="hover:text-primary transition-colors">Home</Link> {'>'} Products {'>'} <span className="text-foreground font-medium">SmartBridge EduSuite</span>
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link> {'>'} Products {'>'} <span className="text-foreground font-medium">SmartBridgeEdu</span>
         </div>
       </div>
 
@@ -27,18 +27,23 @@ export default function SchoolFeePage() {
                 v2.0 Now Live
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                Complete School <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">Management System</span>
+                SmartBridgeEdu <br className="hidden md:block" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">School Management System</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed">
                 Everything your school needs to manage fees, students, results, and parent communication — all in one powerful, easy-to-use platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className={cn(buttonVariants({ size: "lg" }), "shadow-lg shadow-primary/25 transition-transform hover:-translate-y-1")}>
-                  Start Free Trial
-                </Link>
-                <Link href="#demo" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-transform hover:-translate-y-1")}>
-                  Watch Demo <ArrowRight className="ml-2 size-4" />
+                <a 
+                  href="https://test.smartbridgeedu.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={cn(buttonVariants({ size: "lg" }), "shadow-lg shadow-primary/25 transition-transform hover:-translate-y-1 font-semibold flex items-center justify-center")}
+                >
+                  Learn More (Test Environment) <ArrowRight className="ml-2 size-4" />
+                </a>
+                <Link href="/contact" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-transform hover:-translate-y-1 flex items-center justify-center")}>
+                  Book a Demo
                 </Link>
               </div>
             </FadeIn>
@@ -46,7 +51,7 @@ export default function SchoolFeePage() {
             <FadeIn delay={0.2} className="relative aspect-video lg:aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
               <Image 
                 src="/images/schoolfee-hero.jpg" 
-                alt="SmartBridge EduSuite Dashboard"
+                alt="SmartBridgeEdu Dashboard"
                 fill
                 className="object-cover"
                 priority

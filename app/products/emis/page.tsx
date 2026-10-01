@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
-import { ArrowRight, Globe, BarChart4, Target, Users, BookOpen, Layers } from "lucide-react";
+import { Globe, BarChart4, Target, Users, BookOpen, Layers } from "lucide-react";
 
 export default function EMISPage() {
   return (
@@ -164,7 +164,7 @@ export default function EMISPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Connects seamlessly with individual school nodes (like EduSuite) and external government databases via secure APIs.
+                    Connects seamlessly with individual school nodes (like SmartBridgeEdu) and external government databases via secure APIs.
                   </p>
                 </CardContent>
               </Card>

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users, TrendingUp, ShieldCheck, ArrowRight, GraduationCap, Building, Network } from "lucide-react";
+import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Network } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 
 export default function Home() {
@@ -80,7 +80,7 @@ export default function Home() {
           </FadeIn>
 
           <StaggerContainer className="grid md:grid-cols-3 gap-8">
-            {/* SchoolFee */}
+            {/* SmartBridgeEdu */}
             <StaggerItem>
               <Card className="flex flex-col h-full border-border/50 shadow-lg hover:shadow-xl hover:border-primary/50 transition-all duration-300 group overflow-hidden bg-card/50 backdrop-blur-sm">
                 <div className="h-2 w-full bg-gradient-to-r from-primary to-teal-400" />
@@ -88,7 +88,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <GraduationCap size={28} />
                   </div>
-                  <CardTitle className="text-2xl">EduSuite</CardTitle>
+                  <CardTitle className="text-2xl">SmartBridgeEdu</CardTitle>
                   <CardDescription className="text-base">Complete School Management System</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
@@ -101,9 +101,12 @@ export default function Home() {
                     <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Parent & Guardian Portal</span></li>
                   </ul>
                 </CardContent>
-                <CardFooter>
-                  <Link href="/products/schoolfee" className={cn(buttonVariants({ variant: "default" }), "w-full group-hover:bg-primary/90")}>
+                <CardFooter className="flex flex-col gap-2">
+                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default" }), "w-full group-hover:bg-primary/90 flex items-center justify-center font-medium")}>
                     Learn More <ArrowRight className="ml-2 size-4" />
+                  </a>
+                  <Link href="/products/smartbridgeedu" className="text-xs text-center text-muted-foreground hover:text-primary transition-colors">
+                    View Features & Pricing &rarr;
                   </Link>
                 </CardFooter>
               </Card>
@@ -141,33 +144,36 @@ export default function Home() {
               </Card>
             </StaggerItem>
 
-            {/* EstateCare */}
+            {/* Proptech */}
             <StaggerItem>
               <Card className="flex flex-col h-full border-border/50 shadow-lg hover:shadow-xl hover:border-amber-500/50 transition-all duration-300 group overflow-hidden bg-card/50 backdrop-blur-sm relative">
                 <div className="absolute top-6 right-6 inline-flex items-center rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-xs font-semibold text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-800/50">
-                  Coming Q1 2027
+                  Test Live
                 </div>
                 <div className="h-2 w-full bg-gradient-to-r from-amber-400 to-amber-600" />
                 <CardHeader>
                   <div className="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Building size={28} />
                   </div>
-                  <CardTitle className="text-2xl">EstateCare</CardTitle>
-                  <CardDescription className="text-base">Smart Estate Management</CardDescription>
+                  <CardTitle className="text-2xl">Proptech</CardTitle>
+                  <CardDescription className="text-base">Smart Property & Rental Management</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground mb-6">
-                    Streamline residential estate operations. Automate service charges, manage maintenance requests, and secure visitor access easily.
+                    Streamline house rentals, tenancies, and residential estate operations. Automate rent and service charge billing, manage lease agreements, and handle maintenance tickets.
                   </p>
-                  <ul className="space-y-3 opacity-70">
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Service Charge Billing</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Visitor Management System</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Resident Communication</span></li>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Automated Rent & Service Collections</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Tenant Leases & Landlord Dashboard</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Maintenance & Gate Access Passes</span></li>
                   </ul>
                 </CardContent>
-                <CardFooter>
-                  <Link href="/products/estatecare" className={cn(buttonVariants({ variant: "secondary" }), "w-full bg-amber-50 dark:bg-amber-950/20 text-amber-900 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-900/40")}>
-                    Join Waitlist <ArrowRight className="ml-2 size-4" />
+                <CardFooter className="flex flex-col gap-2">
+                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "secondary" }), "w-full bg-amber-500 hover:bg-amber-400 text-amber-950 font-semibold shadow-md flex items-center justify-center")}>
+                    Learn More <ArrowRight className="ml-2 size-4" />
+                  </a>
+                  <Link href="/products/proptech" className="text-xs text-center text-muted-foreground hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
+                    View Product Details &rarr;
                   </Link>
                 </CardFooter>
               </Card>
