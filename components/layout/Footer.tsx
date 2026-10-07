@@ -12,14 +12,8 @@ export default function Footer() {
           </div>
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <Link href="https://www.linkedin.com/company/smartbridge-apex-solutions" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               LinkedIn
-            </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              Twitter
-            </Link>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              Facebook
             </Link>
             <span className="text-border">|</span>
             <Link href="/privacy" className="hover:text-primary transition-colors">

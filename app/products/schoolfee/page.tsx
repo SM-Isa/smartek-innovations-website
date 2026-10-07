@@ -31,7 +31,7 @@ export default function SchoolFeePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">School Management System</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed">
-                Everything your school needs to manage fees, students, results, and parent communication — all in one powerful, easy-to-use platform.
+                Everything your school needs to manage fees, students, results, and parent communication — powered by intelligent AI performance analytics.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -124,10 +124,10 @@ export default function SchoolFeePage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> CA & Exam entry</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> Report cards</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> Rankings</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> Audit trail</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> AI-Assisted Assessment & Student Analytics</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> CA & Exam computation engine</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> Automated terminal report cards</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-teal-500/70" /> Performance rankings & audit trail</li>
                   </ul>
                 </CardContent>
               </Card>

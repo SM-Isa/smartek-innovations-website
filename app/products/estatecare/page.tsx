@@ -52,7 +52,7 @@ export default function ProptechPage() {
           
           <FadeIn delay={0.2}>
             <p className="text-lg md:text-xl text-white/85 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Complete property operations for landlords, estate managers, and tenants. Automate rent and service charge collection, manage digital leases, track repairs, and streamline gated community access.
+              AI-powered property operations for landlords, estate managers, and tenants. Automate rent and service charge collection, manage digital leases with document intelligence, track repairs, and streamline gated community access.
             </p>
           </FadeIn>
           
@@ -128,9 +128,9 @@ export default function ProptechPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-muted-foreground text-sm">
+                    <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> AI document intelligence for lease agreements & receipt verification</li>
                     <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> Digital tenant onboarding & KYC checks</li>
-                    <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> Digital tenancy agreements & e-signatures</li>
-                    <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> Automated lease expiration & renewal notices</li>
+                    <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> Automated lease expiration & renewal workflows</li>
                     <li className="flex items-center gap-3"><CheckCircle2 size={16} className="text-amber-500 shrink-0" /> Move-in & move-out condition documentation</li>
                   </ul>
                 </CardContent>

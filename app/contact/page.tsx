@@ -75,17 +75,17 @@ export default function ContactPage() {
                   </div>
                   
                   <div className="space-y-4 pt-8 border-t border-border/50">
-                    <a href="mailto:hello@smartekinnovations.com" className="flex items-center gap-4 text-lg hover:text-primary transition-colors group">
+                    <a href="mailto:hello@workwithsmartbridge.com" className="flex items-center gap-4 text-lg hover:text-primary transition-colors group">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                         <Mail size={24} />
                       </div>
                       hello@workwithsmartbridge.com
                     </a>
-                    <a href="tel:+2348001234567" className="flex items-center gap-4 text-lg hover:text-primary transition-colors group">
+                    <a href="tel:+2348068569991" className="flex items-center gap-4 text-lg hover:text-primary transition-colors group">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                         <Phone size={24} />
                       </div>
-                      +234 800 123 4567
+                      +234 806 856 9991
                     </a>
                   </div>
                 </div>

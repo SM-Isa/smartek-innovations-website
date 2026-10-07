@@ -47,7 +47,7 @@ export default function Home() {
           
           <FadeIn delay={0.2}>
             <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Empowering schools and estates with intelligent, cloud-based management solutions to simplify operations, automate collections, and enhance communication.
+              Empowering schools and estates with AI-powered, cloud-based management solutions to simplify operations, automate collections, and enhance communication.
             </p>
           </FadeIn>
           
@@ -97,7 +97,7 @@ export default function Home() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Automated Fee Collections</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Result Computation Engine</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>AI-Assisted Assessment & Performance Analytics</span></li>
                     <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Parent & Guardian Portal</span></li>
                   </ul>
                 </CardContent>
@@ -164,7 +164,7 @@ export default function Home() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Automated Rent & Service Collections</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Tenant Leases & Landlord Dashboard</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>AI Document Intelligence for Lease Agreements & Receipts</span></li>
                     <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Maintenance & Gate Access Passes</span></li>
                   </ul>
                 </CardContent>
@@ -269,14 +269,14 @@ export default function Home() {
           <FadeIn>
             <h2 className="text-4xl font-bold tracking-tight mb-6">Ready to Digitize Your Operations?</h2>
             <p className="text-xl text-muted-foreground mb-10">
-              Join dozens of forward-thinking institutions using Smartek Innovations to streamline their operations.
+              Join dozens of forward-thinking institutions using SmartBridge Apex Solutions to streamline their operations.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact" className={cn(buttonVariants({ size: "lg", variant: "default" }), "shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1")}>
                 Book a Free Demo
               </Link>
-              <a href="tel:+2348001234567" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-all hover:-translate-y-1")}>
-                Call: +234 800 123 4567
+              <a href="tel:+2348068569991" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-all hover:-translate-y-1")}>
+                Call: +234 806 856 9991
               </a>
             </div>
           </FadeIn>
