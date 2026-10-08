@@ -4,7 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
-import { ArrowRight, CheckCircle2, Wallet, Users, BarChart3, Smartphone, CalendarCheck, BellRing, Building } from "lucide-react";
+import { ArrowRight, CheckCircle2, Wallet, Users, BarChart3, Smartphone, CalendarCheck, BellRing, Building, Sparkles } from "lucide-react";
 
 export default function SchoolFeePage() {
   return (
@@ -30,9 +30,13 @@ export default function SchoolFeePage() {
                 SmartBridgeEdu <br className="hidden md:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500">School Management System</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-4 max-w-xl leading-relaxed">
                 Everything your school needs to manage fees, students, results, and parent communication — powered by intelligent AI performance analytics.
               </p>
+              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-3.5 py-1.5 rounded-full text-xs font-semibold text-primary mb-8 shadow-sm">
+                <Sparkles className="size-4 animate-pulse text-amber-500" />
+                <span>Powered by Google Cloud Vertex AI & Gemini Multimodal Models</span>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="https://test.smartbridgeedu.com" 

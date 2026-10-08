@@ -3,7 +3,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Network } from "lucide-react";
+import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Network, Sparkles, Brain, Cpu, ScanLine } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              Building the Future of African Institutions
+              AI-Powered Institutional Infrastructure
             </div>
           </FadeIn>
           
@@ -46,9 +46,13 @@ export default function Home() {
           </FadeIn>
           
           <FadeIn delay={0.2}>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Empowering schools and estates with AI-powered, cloud-based management solutions to simplify operations, automate collections, and enhance communication.
+            <p className="text-xl md:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
+              Empowering schools and estates with intelligent automation, smart document generation, and predictive financial ledgers.
             </p>
+            <div className="inline-flex items-center gap-2 bg-slate-900/70 border border-amber-500/40 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-amber-300 mb-8 shadow-lg">
+              <Sparkles className="size-4 text-amber-400 animate-pulse" />
+              <span>Powered by Google Cloud Vertex AI & Gemini Multimodal Models</span>
+            </div>
           </FadeIn>
           
           <FadeIn delay={0.3}>
@@ -179,6 +183,130 @@ export default function Home() {
               </Card>
             </StaggerItem>
           </StaggerContainer>
+        </div>
+      </section>
+
+      {/* AI & Multimodal Intelligence Architecture */}
+      <section className="py-24 relative overflow-hidden bg-slate-900 border-y border-slate-800 text-white">
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-amber-500/15 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <FadeIn>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 text-xs sm:text-sm font-semibold text-amber-400 mb-4 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
+                <Sparkles className="size-4 animate-pulse text-amber-400" />
+                Enterprise AI Engine
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+                Powered by Google Cloud Vertex AI & Gemini
+              </h2>
+              <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Replacing manual paperwork with multimodal document intelligence, dynamic contract synthesis, and predictive institutional workflows.
+              </p>
+            </div>
+          </FadeIn>
+
+          <StaggerContainer className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full bg-slate-950/70 border-slate-800 backdrop-blur-md shadow-xl hover:border-amber-500/50 hover:shadow-amber-500/10 transition-all duration-300">
+                <CardHeader>
+                  <div className="size-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-4 text-amber-400">
+                    <Sparkles className="size-6" />
+                  </div>
+                  <CardTitle className="text-xl text-white">Generative Document & Contract Synthesis</CardTitle>
+                  <CardDescription className="text-slate-400">
+                    Dynamic lease agreements and personalized academic evaluation narratives.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-4">
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Powered by Gemini foundation models to dynamically synthesize customized Nigerian tenancy agreements complying with state laws, while automatically drafting qualitative student progress reports.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-amber-500/15 text-amber-300 border border-amber-500/30">Gemini 1.5 Pro</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Dynamic Leases</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Report Narratives</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </StaggerItem>
+
+            {/* Card 2 */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full bg-slate-950/70 border-slate-800 backdrop-blur-md shadow-xl hover:border-primary/50 hover:shadow-primary/10 transition-all duration-300">
+                <CardHeader>
+                  <div className="size-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4 text-primary">
+                    <ScanLine className="size-6" />
+                  </div>
+                  <CardTitle className="text-xl text-white">Multimodal OCR & Receipt Intelligence</CardTitle>
+                  <CardDescription className="text-slate-400">
+                    Instant extraction and fraud detection for payment receipts and inspection photos.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-4">
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Automated visual parsing of bank transfer slips, utility tokens, and property move-in/move-out damage photos, verifying ledger transactions in real-time.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-primary/15 text-teal-300 border border-primary/30">Vertex AI Vision</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Slip Reconciliation</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Photo Audits</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </StaggerItem>
+
+            {/* Card 3 */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full bg-slate-950/70 border-slate-800 backdrop-blur-md shadow-xl hover:border-teal-500/50 hover:shadow-teal-500/10 transition-all duration-300">
+                <CardHeader>
+                  <div className="size-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center mb-4 text-teal-400">
+                    <Brain className="size-6" />
+                  </div>
+                  <CardTitle className="text-xl text-white">Predictive Institutional Scoring</CardTitle>
+                  <CardDescription className="text-slate-400">
+                    Proactive default risk scoring and academic performance forecasting.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-4">
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Cognitive analytics that detect payment delay patterns to forecast tenant arrears, combined with student learning trajectory analysis to flag academic intervention needs.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-teal-500/15 text-teal-300 border border-teal-500/30">Predictive ML</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Default Risk Scoring</span>
+                    <span className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-300">Early Warning</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </StaggerItem>
+          </StaggerContainer>
+
+          {/* Architecture Banner */}
+          <FadeIn delay={0.2}>
+            <div className="mt-12 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-slate-700/60 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4 text-left">
+                <div className="size-12 rounded-xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0">
+                  <Cpu className="size-6" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-white flex items-center gap-2">
+                    Enterprise Cloud Foundation
+                    <span className="text-[10px] bg-primary/20 text-teal-300 px-2 py-0.5 rounded-full font-semibold border border-primary/30">Google Cloud Native</span>
+                  </h4>
+                  <p className="text-sm text-slate-400">
+                    Integrated across Google Cloud Vertex AI, Gemini Multimodal Models, Cloud Run microservices, and secure Cloud SQL storage.
+                  </p>
+                </div>
+              </div>
+              <div className="shrink-0 flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-amber-400/30 text-amber-300 text-xs font-semibold">
+                <Sparkles className="size-3.5 text-amber-400" />
+                Vertex AI & Gemini Engine
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

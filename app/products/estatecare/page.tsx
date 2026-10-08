@@ -4,7 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
-import { Users, Banknote, Wrench, Shield, BarChart3, Smartphone, ExternalLink, CheckCircle2 } from "lucide-react";
+import { Users, Banknote, Wrench, Shield, BarChart3, Smartphone, ExternalLink, CheckCircle2, Sparkles } from "lucide-react";
 
 export default function ProptechPage() {
   return (
@@ -51,9 +51,13 @@ export default function ProptechPage() {
           </FadeIn>
           
           <FadeIn delay={0.2}>
-            <p className="text-lg md:text-xl text-white/85 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/85 mb-4 max-w-2xl mx-auto leading-relaxed">
               AI-powered property operations for landlords, estate managers, and tenants. Automate rent and service charge collection, manage digital leases with document intelligence, track repairs, and streamline gated community access.
             </p>
+            <div className="inline-flex items-center gap-2 bg-slate-900/80 border border-amber-500/40 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-amber-300 mb-8 shadow-lg">
+              <Sparkles className="size-4 text-amber-400 animate-pulse" />
+              <span>Powered by Google Cloud Vertex AI & Gemini Multimodal Models</span>
+            </div>
           </FadeIn>
           
           <FadeIn delay={0.3}>
