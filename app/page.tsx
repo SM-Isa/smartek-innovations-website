@@ -3,7 +3,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Network, Sparkles, Brain, Cpu, ScanLine } from "lucide-react";
+import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Sparkles, Brain, Cpu, ScanLine, Bike } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
           
           <FadeIn delay={0.2}>
             <p className="text-xl md:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
-              Empowering schools and estates with intelligent automation, smart document generation, and predictive financial ledgers.
+              Empowering schools, estates, and urban logistics networks with intelligent automation, smart document generation, and predictive financial ledgers.
             </p>
             <div className="inline-flex items-center gap-2 bg-slate-900/70 border border-amber-500/40 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-amber-300 mb-8 shadow-lg">
               <Sparkles className="size-4 text-amber-400 animate-pulse" />
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8">
+          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* SmartBridgeEdu */}
             <StaggerItem>
               <Card className="flex flex-col h-full border-border/50 shadow-lg hover:shadow-xl hover:border-primary/50 transition-all duration-300 group overflow-hidden bg-card/50 backdrop-blur-sm">
@@ -101,7 +101,7 @@ export default function Home() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Automated Fee Collections</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>AI-Assisted Assessment & Performance Analytics</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>AI-Assisted Assessment Analytics</span></li>
                     <li className="flex items-center gap-3"><ShieldCheck className="text-primary size-5" /> <span>Parent & Guardian Portal</span></li>
                   </ul>
                 </CardContent>
@@ -111,38 +111,6 @@ export default function Home() {
                   </a>
                   <Link href="/products/smartbridgeedu" className="text-xs text-center text-muted-foreground hover:text-primary transition-colors">
                     View Features & Pricing &rarr;
-                  </Link>
-                </CardFooter>
-              </Card>
-            </StaggerItem>
-
-            {/* EMIS */}
-            <StaggerItem>
-              <Card className="flex flex-col h-full border-border/50 shadow-lg hover:shadow-xl hover:border-teal-500/50 transition-all duration-300 group overflow-hidden bg-card/50 backdrop-blur-sm relative">
-                <div className="absolute top-6 right-6 inline-flex items-center rounded-full bg-teal-100 dark:bg-teal-900/30 px-3 py-1 text-xs font-semibold text-teal-800 dark:text-teal-400 border border-teal-200 dark:border-teal-800/50">
-                  Enterprise
-                </div>
-                <div className="h-2 w-full bg-gradient-to-r from-teal-400 to-primary" />
-                <CardHeader>
-                  <div className="w-12 h-12 bg-teal-500/10 text-teal-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Network size={28} />
-                  </div>
-                  <CardTitle className="text-2xl">EMIS</CardTitle>
-                  <CardDescription className="text-base">Education Management Info System</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground mb-6">
-                    A macro-level dashboard for ministries and large networks. Aggregate data, track policy impact, and allocate resources efficiently.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-teal-500 size-5" /> <span>State-wide Aggregation</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-teal-500 size-5" /> <span>Policy Analytics</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-teal-500 size-5" /> <span>Resource Allocation</span></li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href="/products/emis" className={cn(buttonVariants({ variant: "outline" }), "w-full border-teal-500/20 text-teal-600 hover:bg-teal-50 dark:hover:bg-teal-950/30")}>
-                    Learn More <ArrowRight className="ml-2 size-4" />
                   </Link>
                 </CardFooter>
               </Card>
@@ -167,9 +135,9 @@ export default function Home() {
                     Streamline house rentals, tenancies, and residential estate operations. Automate rent and service charge billing, manage lease agreements, and handle maintenance tickets.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Automated Rent & Service Collections</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>AI Document Intelligence for Lease Agreements & Receipts</span></li>
-                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Maintenance & Gate Access Passes</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Automated Collections</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>AI Lease & Receipt Intelligence</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-amber-500 size-5" /> <span>Gate Access Passes</span></li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex flex-col gap-2">
@@ -178,6 +146,41 @@ export default function Home() {
                   </a>
                   <Link href="/products/proptech" className="text-xs text-center text-muted-foreground hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
                     View Product Details &rarr;
+                  </Link>
+                </CardFooter>
+              </Card>
+            </StaggerItem>
+
+            {/* Dispatch & Food Storefront */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full border-border/50 shadow-lg hover:shadow-xl hover:border-emerald-500/50 transition-all duration-300 group overflow-hidden bg-card/50 backdrop-blur-sm relative">
+                <div className="absolute top-6 right-6 inline-flex items-center rounded-full bg-emerald-100 dark:bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-800 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/50">
+                  New Pilot
+                </div>
+                <div className="h-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500" />
+                <CardHeader>
+                  <div className="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Bike size={28} />
+                  </div>
+                  <CardTitle className="text-2xl">Dispatch</CardTitle>
+                  <CardDescription className="text-base">Food Storefront & Fleet Logistics</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground mb-6">
+                    Multi-tenant food vendor storefronts, motorcycle dispatch aggregation, and automated zero-sum escrow accounting for African secondary cities.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-emerald-500 size-5" /> <span>Sub-Second SSR Catalogs</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-emerald-500 size-5" /> <span>PostGIS Geospatial Matching</span></li>
+                    <li className="flex items-center gap-3"><ShieldCheck className="text-emerald-500 size-5" /> <span>Gemini 1.5 Menu OCR Vision</span></li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="flex flex-col gap-2">
+                  <Link href="/products/dispatch" className={cn(buttonVariants({ variant: "default" }), "w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-md flex items-center justify-center")}>
+                    Learn More <ArrowRight className="ml-2 size-4" />
+                  </Link>
+                  <Link href="/products/dispatch" className="text-xs text-center text-muted-foreground hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                    View Fleet & Economics &rarr;
                   </Link>
                 </CardFooter>
               </Card>

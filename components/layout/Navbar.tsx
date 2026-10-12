@@ -19,9 +19,11 @@ export default function Navbar() {
             <div className="absolute top-full left-0 mt-2 w-52 bg-card border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <div className="p-2 flex flex-col">
                 <Link href="/products/smartbridgeedu" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors">SmartBridgeEdu</Link>
-                <Link href="/products/emis" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors">EMIS</Link>
                 <Link href="/products/proptech" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors flex items-center justify-between">
                   Proptech <span className="text-[10px] bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300 px-1.5 py-0.5 rounded font-medium">Test Live</span>
+                </Link>
+                <Link href="/products/dispatch" className="px-4 py-2 hover:bg-muted rounded-md text-foreground transition-colors flex items-center justify-between">
+                  Dispatch & Food <span className="text-[10px] bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 px-1.5 py-0.5 rounded font-medium">New Pilot</span>
                 </Link>
               </div>
             </div>
