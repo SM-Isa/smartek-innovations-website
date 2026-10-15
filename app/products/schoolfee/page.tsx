@@ -217,68 +217,90 @@ export default function SchoolFeePage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold tracking-tight mb-4">Standardized B2B SaaS Subscriptions</h2>
-              <p className="text-xl text-muted-foreground">Zero setup fees. Predictable monthly or termly recurring SaaS licenses.</p>
+              <div className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20 mb-4">
+                Student-Based Pricing • 30-Day Free Trial
+              </div>
+              <h2 className="text-4xl font-bold tracking-tight mb-4">Predictable Pricing That Scales With Your School</h2>
+              <p className="text-xl text-muted-foreground">Zero setup fees. Pay only for active students termly (3x per year) or annually.</p>
             </div>
           </FadeIn>
           
-          <StaggerContainer className="grid md:grid-cols-3 gap-8 items-center">
+          <StaggerContainer className="grid md:grid-cols-3 gap-8 items-stretch">
+            {/* Academic Essentials */}
             <StaggerItem>
-              <Card className="flex flex-col hover:shadow-lg transition-shadow">
+              <Card className="flex flex-col h-full hover:shadow-lg transition-shadow bg-card">
                 <CardHeader className="text-center pb-8 pt-10">
-                  <CardTitle className="text-2xl mb-2 text-muted-foreground">Starter</CardTitle>
-                  <div className="text-4xl font-bold">₦10,000<span className="text-lg text-muted-foreground font-normal">/mo</span></div>
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Standard Package</div>
+                  <CardTitle className="text-2xl mb-2 text-foreground">Academic Essentials</CardTitle>
+                  <div className="text-4xl font-bold">₦200<span className="text-sm text-muted-foreground font-normal"> / student / term</span></div>
+                  <p className="text-xs text-muted-foreground mt-2">Or ₦500 / student / year (Save ~20%)</p>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <ul className="space-y-4 text-center">
-                    <li>Up to 200 students</li>
-                    <li>Core SaaS portal features</li>
-                    <li>Email & ticket support</li>
+                  <ul className="space-y-3 text-sm text-muted-foreground text-left">
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Full continuous assessment & exam grading</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Automated class rankings & GPA reports</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Digital PDF report cards with school crest</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Live parent result checking portal</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Daily attendance roll call & SMS alerts</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Offline fee tracking & manual bank logs</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>Test Live Demo</a>
+                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>Start Essentials Trial</a>
                 </div>
               </Card>
             </StaggerItem>
             
+            {/* Full FinTech Suite */}
             <StaggerItem>
-              <Card className="flex flex-col border-primary shadow-xl relative overflow-visible scale-105 bg-card z-10">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-teal-500 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-semibold z-10 whitespace-nowrap shadow-md">
-                  Most Popular
+              <Card className="flex flex-col h-full border-primary shadow-xl relative overflow-visible scale-105 bg-card z-10">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-teal-500 text-primary-foreground px-4 py-1.5 rounded-full text-xs font-semibold z-10 whitespace-nowrap shadow-md">
+                  Most Popular • Complete Suite
                 </div>
                 <CardHeader className="text-center pb-8 pt-10">
-                  <CardTitle className="text-2xl mb-2 text-primary">Growth</CardTitle>
-                  <div className="text-5xl font-bold text-primary">₦15,000<span className="text-lg text-muted-foreground font-normal">/mo</span></div>
+                  <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">All-In-One Platform</div>
+                  <CardTitle className="text-2xl mb-2 text-primary">Full FinTech Suite</CardTitle>
+                  <div className="text-4xl font-bold text-primary">₦300<span className="text-sm text-muted-foreground font-normal"> / student / term</span></div>
+                  <p className="text-xs text-muted-foreground mt-2">Or ₦750 / student / year (Only ₦100 extra/student)</p>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <ul className="space-y-4 text-center">
-                    <li className="font-medium">Up to 500 students</li>
-                    <li className="font-medium">AI assessment analytics</li>
-                    <li className="font-medium">Priority support</li>
+                  <ul className="space-y-3 text-sm text-muted-foreground text-left">
+                    <li className="flex items-center gap-2 font-medium text-foreground"><CheckCircle2 size={16} className="text-primary shrink-0" /> Everything in Essentials, Plus:</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Integrated parent card, transfer & USSD gateway</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Automated real-time instant bank reconciliation</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Dynamic parent installment plans & invoicing</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> QR-verifiable tamper-proof digital receipts</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> AI student performance analytics & insights</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Dedicated WhatsApp onboarding support</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants(), "w-full shadow-lg shadow-primary/20")}>Start Free Trial</a>
+                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants(), "w-full shadow-lg shadow-primary/20")}>Start 30-Day Free Trial</a>
                 </div>
               </Card>
             </StaggerItem>
 
+            {/* Enterprise */}
             <StaggerItem>
-              <Card className="flex flex-col hover:shadow-lg transition-shadow">
+              <Card className="flex flex-col h-full hover:shadow-lg transition-shadow bg-card">
                 <CardHeader className="text-center pb-8 pt-10">
-                  <CardTitle className="text-2xl mb-2 text-muted-foreground">Enterprise</CardTitle>
-                  <div className="text-4xl font-bold">₦40,000<span className="text-lg text-muted-foreground font-normal">/mo+</span></div>
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Chains & State Boards</div>
+                  <CardTitle className="text-2xl mb-2 text-foreground">Enterprise & EMIS</CardTitle>
+                  <div className="text-4xl font-bold">Custom<span className="text-sm text-muted-foreground font-normal"> volume SLA</span></div>
+                  <p className="text-xs text-muted-foreground mt-2">Annual licensing for multi-campus chains</p>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <ul className="space-y-4 text-center">
-                    <li>Unlimited students</li>
-                    <li>Multi-campus & EMIS integration</li>
-                    <li>Dedicated account manager</li>
+                  <ul className="space-y-3 text-sm text-muted-foreground text-left">
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Unlimited students & multiple campuses</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Full EMIS macro network aggregation dashboard</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Custom school domain & white-label portals</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Centralized multi-school accounting</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> REST API access & external LMS webhooks</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> 99.9% Uptime SLA & dedicated technical engineer</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <Link href="/pricing" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>View SaaS Pricing Model</Link>
+                  <Link href="/pricing#smartbridgeedu" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>View Full SaaS Breakdown</Link>
                 </div>
               </Card>
             </StaggerItem>

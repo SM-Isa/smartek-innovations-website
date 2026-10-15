@@ -53,7 +53,7 @@ export default function PricingPage() {
 
       {/* Product 1: SmartBridgeEdu Pricing */}
       <section id="smartbridgeedu" className="py-16 border-t border-border/50 bg-background">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
               <div>
@@ -61,101 +61,110 @@ export default function PricingPage() {
                   <GraduationCap className="size-5" /> Product Line 1
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight">SmartBridgeEdu (School Management SaaS)</h2>
-                <p className="text-muted-foreground">Multi-tenant cloud ERP for primary, secondary, and tertiary schools.</p>
+                <p className="text-muted-foreground">Predictable, student-based pricing that scales with your school. Start with a 30-day free trial and pay only for active students.</p>
               </div>
-              <div className="inline-block text-xs font-medium px-3 py-1 bg-muted rounded-full text-muted-foreground">
-                Billed monthly or termly • Recurring SaaS license
+              <div className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 bg-primary/10 text-primary rounded-full border border-primary/20">
+                Student-Based Pricing • Termly (3x/yr) or Annual (Save ~20%) • 30-Day Free Trial
               </div>
             </div>
           </FadeIn>
 
           <StaggerContainer className="grid md:grid-cols-3 gap-8 items-stretch">
-            {/* Starter */}
+            {/* Academic Essentials */}
             <StaggerItem>
-              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all">
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
                 <CardHeader className="pb-6">
-                  <CardTitle className="text-xl">Starter School</CardTitle>
-                  <CardDescription>For growing private institutions</CardDescription>
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Standard Package</div>
+                  <CardTitle className="text-xl">Academic Essentials</CardTitle>
+                  <CardDescription className="text-sm min-h-[40px]">Ideal for schools that collect fees offline or directly through bank accounts, but need full digital academics.</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">₦10,000</span>
-                    <span className="text-muted-foreground text-sm"> / month</span>
+                    <span className="text-4xl font-bold">₦200</span>
+                    <span className="text-muted-foreground text-sm"> / student / term</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Or ₦27,000 billed termly (10% discount)</p>
+                  <p className="text-xs text-muted-foreground mt-1">Or ₦500 / student / year (Save ~20%) • 30-day trial</p>
                 </CardHeader>
                 <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b">
-                    <CheckCircle2 size={16} className="text-primary" /> Up to 200 enrolled students
+                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b text-xs">
+                    <CheckCircle2 size={16} className="text-primary shrink-0" /> Pay only for enrolled, active students
                   </div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Automated school fee invoicing & tracking</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Online parent payment gateway integration</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Academic terminal report card generation</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Standard email and ticket support</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Complete CA & exam grading calculations</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Automated class rankings & GPA reports</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Digital PDF report cards with school crest</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Live parent result checking portal</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Daily attendance roll call & absence SMS alerts</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Offline fee tracking & manual teller logs</div>
                 </CardContent>
                 <CardFooter className="pt-4">
                   <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                    Test Live Demo <ArrowRight className="ml-2 size-4" />
+                    Start Free Trial with Essentials <ArrowRight className="ml-2 size-4" />
                   </a>
                 </CardFooter>
               </Card>
             </StaggerItem>
 
-            {/* Growth */}
+            {/* Full FinTech & Academic Suite */}
             <StaggerItem>
               <Card className="flex flex-col h-full border-primary shadow-xl relative overflow-visible scale-105 bg-card z-10">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-teal-500 text-primary-foreground px-4 py-1 rounded-full text-xs font-semibold shadow-md">
-                  Most Popular SaaS Tier
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-teal-500 text-primary-foreground px-4 py-1 rounded-full text-xs font-semibold shadow-md whitespace-nowrap">
+                  Most Popular • Complete Suite
                 </div>
                 <CardHeader className="pb-6 pt-8">
-                  <CardTitle className="text-xl text-primary">Growth Campus</CardTitle>
-                  <CardDescription>For established multi-arm academies</CardDescription>
+                  <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">All-In-One Platform</div>
+                  <CardTitle className="text-xl text-primary">Full FinTech Suite</CardTitle>
+                  <CardDescription className="text-sm min-h-[40px]">Complete end-to-end automation: online card & bank payments with instant reconciliation, plus all academic features.</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-primary">₦15,000</span>
-                    <span className="text-muted-foreground text-sm"> / month</span>
+                    <span className="text-4xl font-bold text-primary">₦300</span>
+                    <span className="text-muted-foreground text-sm"> / student / term</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Or ₦40,500 billed termly (10% discount)</p>
+                  <p className="text-xs text-muted-foreground mt-1">Or ₦750 / student / year (Save ~20%) • Only ₦100 extra/student</p>
                 </CardHeader>
                 <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b">
-                    <CheckCircle2 size={16} className="text-primary" /> Up to 500 enrolled students
+                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b text-xs">
+                    <CheckCircle2 size={16} className="text-primary shrink-0" /> Everything in Essentials, Plus:
                   </div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> All Starter School features included</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> AI-Assisted Assessment & Performance Analytics</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Automated SMS & WhatsApp payment reminders</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Teacher attendance & grading audit trails</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Dedicated account manager & onboarding</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Integrated online fee payment gateway (Cards, Transfer, USSD)</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Zero school markup: gateway fees charged to parents directly</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Automated real-time bank reconciliation (zero manual teller checks)</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Dynamic installment plans & automated parent invoicing</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Digital tamper-proof receipts with QR verification</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> AI-Assisted Assessment & Student Performance Analytics</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Dedicated WhatsApp & priority onboarding support</div>
                 </CardContent>
                 <CardFooter className="pt-4">
                   <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "default" }), "w-full shadow-md")}>
-                    Launch Free Trial <ArrowRight className="ml-2 size-4" />
+                    Start 30-Day Free Trial <ArrowRight className="ml-2 size-4" />
                   </a>
                 </CardFooter>
               </Card>
             </StaggerItem>
 
-            {/* Enterprise */}
+            {/* Enterprise & EMIS */}
             <StaggerItem>
-              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all">
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
                 <CardHeader className="pb-6">
-                  <CardTitle className="text-xl">Network Enterprise</CardTitle>
-                  <CardDescription>For school groups & educational chains</CardDescription>
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Chains & State Boards</div>
+                  <CardTitle className="text-xl">Enterprise & EMIS</CardTitle>
+                  <CardDescription className="text-sm min-h-[40px]">For school groups, educational networks, and state ministries requiring cross-regional oversight.</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">₦40,000</span>
-                    <span className="text-muted-foreground text-sm"> / month base</span>
+                    <span className="text-4xl font-bold">Custom</span>
+                    <span className="text-muted-foreground text-sm"> volume SLA</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Plus volume-tiered per-student pricing</p>
+                  <p className="text-xs text-muted-foreground mt-1">Multi-campus software licensing & cloud infrastructure</p>
                 </CardHeader>
                 <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b">
-                    <CheckCircle2 size={16} className="text-primary" /> Unlimited students & multiple campuses
+                  <div className="flex items-center gap-2 text-foreground font-medium pb-2 border-b text-xs">
+                    <CheckCircle2 size={16} className="text-primary shrink-0" /> Unlimited students & multiple campuses
                   </div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Full EMIS macro network dashboard integration</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> Custom institutional domain (portal.yourschool.edu.ng)</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> REST API access & external LMS webhooks</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary" /> 99.9% Uptime SLA & priority phone support</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Full EMIS macro network dashboard integration</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Custom institutional domain (portal.yourschool.edu.ng)</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Centralized multi-school accounting & fee aggregation</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> REST API access & external LMS webhooks</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> Cross-school policy benchmarking & student cohort analytics</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-primary shrink-0" /> 99.9% Uptime SLA & dedicated technical engineer</div>
                 </CardContent>
                 <CardFooter className="pt-4">
                   <Link href="/contact" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                    Contact Sales <ArrowRight className="ml-2 size-4" />
+                    Contact Enterprise Sales <ArrowRight className="ml-2 size-4" />
                   </Link>
                 </CardFooter>
               </Card>
@@ -166,7 +175,7 @@ export default function PricingPage() {
 
       {/* Product 2: Proptech Pricing */}
       <section id="proptech" className="py-16 border-t border-border/50 bg-slate-50/50 dark:bg-slate-900/30">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
               <div>
@@ -174,93 +183,239 @@ export default function PricingPage() {
                   <Building className="size-5" /> Product Line 2
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight">Proptech / SmartHouseRent (Property SaaS)</h2>
-                <p className="text-muted-foreground">Automated rent invoicing, tenant screening, and gate access infrastructure.</p>
+                <p className="text-muted-foreground">Transparent annual pricing based on unit count. Scale up smoothly with zero hidden fees.</p>
               </div>
-              <div className="inline-block text-xs font-medium px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full">
-                Per-unit subscription + automated transaction rail
+              <div className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full border border-amber-500/20">
+                Transparent Annual SaaS Pricing • 90-Day Free Trial
               </div>
             </div>
           </FadeIn>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8 items-stretch">
-            {/* Landlord Tier */}
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 items-stretch">
+            {/* 1. Starter */}
             <StaggerItem>
-              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all">
-                <CardHeader className="pb-6">
-                  <CardTitle className="text-xl">Independent Landlord</CardTitle>
-                  <CardDescription>For residential property owners</CardDescription>
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
+                <CardHeader className="pb-4">
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Entry Plan</div>
+                  <CardTitle className="text-xl">Starter</CardTitle>
+                  <CardDescription className="text-xs min-h-[32px]">For small landlords just getting started</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">₦7,500</span>
-                    <span className="text-muted-foreground text-sm"> / month</span>
+                    <span className="text-3xl font-bold">Free</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Up to 10 rental apartments / units</p>
+                  <p className="text-xs text-muted-foreground mt-1">90-day free trial</p>
                 </CardHeader>
-                <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Automated digital rent invoicing & receipts</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Automated tenant payment reminders (SMS/Email)</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Tenant KYC & document storage</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Maintenance ticket tracking</div>
+                <CardContent className="flex-grow space-y-2.5 text-xs text-muted-foreground pt-2">
+                  <div className="text-foreground font-semibold pb-2 border-b text-xs flex items-center gap-1.5">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0" />
+                    <span>1 property • Up to 3 units</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Basic tenant management</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Manual & automated invoicing</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Email support</span>
+                  </div>
                 </CardContent>
                 <CardFooter className="pt-4">
-                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                    Test Live Demo <ArrowRight className="ml-2 size-4" />
+                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full text-xs")}>
+                    Test Live Demo <ArrowRight className="ml-1 size-3.5" />
                   </a>
                 </CardFooter>
               </Card>
             </StaggerItem>
 
-            {/* Estate Pro */}
+            {/* 2. Standard (Solo) */}
             <StaggerItem>
-              <Card className="flex flex-col h-full border-amber-500/60 shadow-xl relative overflow-visible scale-105 bg-card z-10">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-amber-950 font-bold px-4 py-1 rounded-full text-xs shadow-md">
-                  Most Popular for Estates
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
+                <CardHeader className="pb-4">
+                  <div className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider mb-1">Independent</div>
+                  <CardTitle className="text-xl">Standard (Solo)</CardTitle>
+                  <CardDescription className="text-xs min-h-[32px]">For independent landlords managing single residential buildings</CardDescription>
+                  <div className="mt-4">
+                    <span className="text-3xl font-bold">₦25,000</span>
+                    <span className="text-muted-foreground text-xs"> / year</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">~₦2,083/mo • 90-day trial</p>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-2.5 text-xs text-muted-foreground pt-2">
+                  <div className="text-foreground font-semibold pb-2 border-b text-xs flex items-center gap-1.5">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0" />
+                    <span>Up to 3 properties • 15 units</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Automated billing & rent collection</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Escrow custody & protection</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Maintenance ticketing</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Tenant communications</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Standard support</span>
+                  </div>
+                </CardContent>
+                <CardFooter className="pt-4">
+                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full text-xs")}>
+                    Start 90-Day Trial <ArrowRight className="ml-1 size-3.5" />
+                  </a>
+                </CardFooter>
+              </Card>
+            </StaggerItem>
+
+            {/* 3. Professional (Growth) - Most Popular */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full border-amber-500 shadow-xl relative overflow-visible scale-105 bg-card z-10">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-amber-950 font-bold px-3 py-1 rounded-full text-[11px] shadow-md uppercase tracking-wider whitespace-nowrap">
+                  Most Popular
                 </div>
-                <CardHeader className="pb-6 pt-8">
-                  <CardTitle className="text-xl text-amber-600 dark:text-amber-400">Estate & Facility Manager</CardTitle>
-                  <CardDescription>For gated communities & CDA associations</CardDescription>
+                <CardHeader className="pb-4 pt-7">
+                  <div className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider mb-1">Growth Portfolios</div>
+                  <CardTitle className="text-xl text-amber-600 dark:text-amber-400">Professional (Growth)</CardTitle>
+                  <CardDescription className="text-xs min-h-[32px]">For growing property portfolios and multi-property managers</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-amber-600 dark:text-amber-400">₦25,000</span>
-                    <span className="text-muted-foreground text-sm"> / month</span>
+                    <span className="text-3xl font-bold text-amber-600 dark:text-amber-400">₦60,000</span>
+                    <span className="text-muted-foreground text-xs"> / year</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Up to 50 housing units / residents</p>
+                  <p className="text-xs text-muted-foreground mt-1">~₦5,000/mo • 90-day trial</p>
                 </CardHeader>
-                <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Automated service charge collections & budgeting</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> AI Document Intelligence for lease synthesis</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Digital visitor gate passes & security OTP check-in</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Real-time arrears aging & defaulter ledger</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Resident self-service mobile portal</div>
+                <CardContent className="flex-grow space-y-2.5 text-xs text-muted-foreground pt-2">
+                  <div className="text-foreground font-semibold pb-2 border-b text-xs flex items-center gap-1.5">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0" />
+                    <span>Up to 10 properties • 50 units</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Automated billing & reminders</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Escrow custody & protection</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Maintenance & expense tracking</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Tenant communications</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Advanced analytics & reports</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Priority support</span>
+                  </div>
                 </CardContent>
                 <CardFooter className="pt-4">
-                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "secondary" }), "w-full bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold shadow-md")}>
-                    Explore Test Platform <ArrowRight className="ml-2 size-4" />
+                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "w-full bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold shadow-md text-xs")}>
+                    Start 90-Day Trial <ArrowRight className="ml-1 size-3.5" />
                   </a>
                 </CardFooter>
               </Card>
             </StaggerItem>
 
-            {/* Enterprise Commercial */}
+            {/* 4. Portfolio (Business) */}
             <StaggerItem>
-              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all">
-                <CardHeader className="pb-6">
-                  <CardTitle className="text-xl">Enterprise Developer</CardTitle>
-                  <CardDescription>For property developers & REITs</CardDescription>
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
+                <CardHeader className="pb-4">
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Commercial</div>
+                  <CardTitle className="text-xl">Portfolio (Business)</CardTitle>
+                  <CardDescription className="text-xs min-h-[32px]">For large landlords and commercial property managers</CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">₦60,000</span>
-                    <span className="text-muted-foreground text-sm"> / month</span>
+                    <span className="text-3xl font-bold">₦150,000</span>
+                    <span className="text-muted-foreground text-xs"> / year</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Unlimited units across multi-estate portfolios</p>
+                  <p className="text-xs text-muted-foreground mt-1">~₦12,500/mo • 90-day trial</p>
                 </CardHeader>
-                <CardContent className="flex-grow space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Unlimited properties, estates, and units</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Multi-tiered landlord payout automation</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Direct BaaS virtual account generation (Monnify/Korapay)</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Custom branding & resident communications</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={16} className="text-amber-500" /> Enterprise SLA & dedicated technical engineer</div>
+                <CardContent className="flex-grow space-y-2.5 text-xs text-muted-foreground pt-2">
+                  <div className="text-foreground font-semibold pb-2 border-b text-xs flex items-center gap-1.5">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0" />
+                    <span>Up to 25 properties • 150 units</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Multi-manager access</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Custom financial exports</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Escrow custody & protection</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Priority phone & email support</span>
+                  </div>
                 </CardContent>
                 <CardFooter className="pt-4">
-                  <Link href="/contact" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                    Contact Sales <ArrowRight className="ml-2 size-4" />
+                  <a href="https://test.smarthouserent.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full text-xs")}>
+                    Start 90-Day Trial <ArrowRight className="ml-1 size-3.5" />
+                  </a>
+                </CardFooter>
+              </Card>
+            </StaggerItem>
+
+            {/* 5. Enterprise (Agencies) */}
+            <StaggerItem>
+              <Card className="flex flex-col h-full border-border/60 hover:shadow-lg transition-all bg-card">
+                <CardHeader className="pb-4">
+                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Agencies & Developers</div>
+                  <CardTitle className="text-xl">Enterprise (Agencies)</CardTitle>
+                  <CardDescription className="text-xs min-h-[32px]">For property management companies and estate developers</CardDescription>
+                  <div className="mt-4">
+                    <span className="text-3xl font-bold">₦300,000</span>
+                    <span className="text-muted-foreground text-xs"> / year</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">~₦25,000/mo • 30-day trial</p>
+                </CardHeader>
+                <CardContent className="flex-grow space-y-2.5 text-xs text-muted-foreground pt-2">
+                  <div className="text-foreground font-semibold pb-2 border-b text-xs flex items-center gap-1.5">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0" />
+                    <span>Unlimited properties & units</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Multi-workspace management</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Dedicated account manager</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>Custom integrations & SLA</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>API access & webhooks</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={14} className="text-amber-500 shrink-0 mt-0.5" />
+                    <span>SLA uptime guarantees</span>
+                  </div>
+                </CardContent>
+                <CardFooter className="pt-4">
+                  <Link href="/contact" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "w-full text-xs")}>
+                    Contact Sales <ArrowRight className="ml-1 size-3.5" />
                   </Link>
                 </CardFooter>
               </Card>
