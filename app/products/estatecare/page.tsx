@@ -236,6 +236,12 @@ export default function ProptechPage() {
                 >
                   Visit Test Environment <ExternalLink size={18} />
                 </a>
+                <Link 
+                  href="/pricing#proptech"
+                  className={cn(buttonVariants({ size: "lg", variant: "outline" }), "border-amber-500/40 hover:bg-amber-500/10 text-foreground flex items-center justify-center")}
+                >
+                  View SaaS Pricing Tiers
+                </Link>
               </div>
             </div>
           </FadeIn>

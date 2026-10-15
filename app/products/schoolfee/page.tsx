@@ -217,8 +217,8 @@ export default function SchoolFeePage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold tracking-tight mb-4">Simple, Transparent Pricing</h2>
-              <p className="text-xl text-muted-foreground">No hidden fees. Cancel anytime.</p>
+              <h2 className="text-4xl font-bold tracking-tight mb-4">Standardized B2B SaaS Subscriptions</h2>
+              <p className="text-xl text-muted-foreground">Zero setup fees. Predictable monthly or termly recurring SaaS licenses.</p>
             </div>
           </FadeIn>
           
@@ -232,12 +232,12 @@ export default function SchoolFeePage() {
                 <CardContent className="flex-grow">
                   <ul className="space-y-4 text-center">
                     <li>Up to 200 students</li>
-                    <li>Core features</li>
-                    <li>Email support</li>
+                    <li>Core SaaS portal features</li>
+                    <li>Email & ticket support</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <Link href="/contact" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>Get Started</Link>
+                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>Test Live Demo</a>
                 </div>
               </Card>
             </StaggerItem>
@@ -254,12 +254,12 @@ export default function SchoolFeePage() {
                 <CardContent className="flex-grow">
                   <ul className="space-y-4 text-center">
                     <li className="font-medium">Up to 500 students</li>
-                    <li className="font-medium">All features</li>
+                    <li className="font-medium">AI assessment analytics</li>
                     <li className="font-medium">Priority support</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <Link href="/contact" className={cn(buttonVariants(), "w-full shadow-lg shadow-primary/20")}>Get Started</Link>
+                  <a href="https://test.smartbridgeedu.com" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants(), "w-full shadow-lg shadow-primary/20")}>Start Free Trial</a>
                 </div>
               </Card>
             </StaggerItem>
@@ -268,17 +268,17 @@ export default function SchoolFeePage() {
               <Card className="flex flex-col hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center pb-8 pt-10">
                   <CardTitle className="text-2xl mb-2 text-muted-foreground">Enterprise</CardTitle>
-                  <div className="text-4xl font-bold">Custom</div>
+                  <div className="text-4xl font-bold">₦40,000<span className="text-lg text-muted-foreground font-normal">/mo+</span></div>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="space-y-4 text-center">
                     <li>Unlimited students</li>
-                    <li>Custom modules</li>
-                    <li>Dedicated manager</li>
+                    <li>Multi-campus & EMIS integration</li>
+                    <li>Dedicated account manager</li>
                   </ul>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <Link href="/contact" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>Contact Us</Link>
+                  <Link href="/pricing" className={cn(buttonVariants({ variant: "outline" }), "w-full hover:bg-primary/5")}>View SaaS Pricing Model</Link>
                 </div>
               </Card>
             </StaggerItem>

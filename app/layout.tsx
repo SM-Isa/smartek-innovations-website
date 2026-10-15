@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SmartBridge Apex Solutions | AI-Powered Enterprise Infrastructure for African Institutions",
-  description: "Next-generation institutional management platforms powered by Google Cloud Vertex AI & Gemini Multimodal Models. Automated digital tenancies, dynamic lease generation, and smart school ERPs.",
+  title: "SmartBridge | AI-Powered B2B SaaS Platforms for African Institutions",
+  description: "Early-stage technology startup operating proprietary B2B SaaS platforms—SmartBridgeEdu, Proptech (SmartHouseRent), and EMIS. Powered by Google Cloud Vertex AI & Gemini.",
 };
 
 import Navbar from "@/components/layout/Navbar";

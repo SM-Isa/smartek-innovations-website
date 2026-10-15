@@ -3,7 +3,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Sparkles, Brain, Cpu, ScanLine, Bike } from "lucide-react";
+import { Building2, Users, ShieldCheck, ArrowRight, GraduationCap, Building, Sparkles, Brain, Cpu, ScanLine, Bike, TrendingUp, CreditCard, Server, Layers } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 
 export default function Home() {
@@ -34,20 +34,20 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              AI-Powered Institutional Infrastructure
+              AI-Powered B2B SaaS Platforms
             </div>
           </FadeIn>
           
           <FadeIn delay={0.1}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight drop-shadow-lg">
-              SmartBridge Apex Solutions for <br className="hidden md:block" />
+              AI-Powered B2B SaaS for <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">African Institutions</span>
             </h1>
           </FadeIn>
           
           <FadeIn delay={0.2}>
             <p className="text-xl md:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed">
-              Empowering schools, estates, and urban logistics networks with intelligent automation, smart document generation, and predictive financial ledgers.
+              Multi-tenant cloud platforms empowering schools, estates, and urban logistics networks with automated financial ledgers, digital workflows, and multimodal AI intelligence.
             </p>
             <div className="inline-flex items-center gap-2 bg-slate-900/70 border border-amber-500/40 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-amber-300 mb-8 shadow-lg">
               <Sparkles className="size-4 text-amber-400 animate-pulse" />
@@ -58,10 +58,10 @@ export default function Home() {
           <FadeIn delay={0.3}>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="#products" className={cn(buttonVariants({ size: "lg" }), "bg-amber-500 text-amber-950 hover:bg-amber-400 border-none shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all hover:scale-105")}>
-                Explore Our Products <ArrowRight className="ml-2 size-5" />
+                Explore Our Platforms <ArrowRight className="ml-2 size-5" />
               </Link>
-              <Link href="/contact" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-md transition-all hover:scale-105")}>
-                Book a Demo
+              <Link href="/pricing" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-md transition-all hover:scale-105")}>
+                View SaaS Pricing
               </Link>
             </div>
           </FadeIn>
@@ -76,9 +76,9 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold tracking-tight mb-4">Our Core Products</h2>
+              <h2 className="text-4xl font-bold tracking-tight mb-4">Our Core SaaS Platforms</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Tailor-made software solutions designed specifically for the unique operational challenges of modern African institutions.
+                Proprietary, multi-tenant cloud software engineered to automate institutional operations and financial ledgers at scale.
               </p>
             </div>
           </FadeIn>
@@ -313,6 +313,78 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SaaS Product Business Model */}
+      <section className="py-24 bg-background border-b border-border/50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <FadeIn>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs sm:text-sm font-semibold text-primary mb-4">
+                <Layers className="size-4" /> Scalable Technology Startup
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+                Our SaaS Product Business Model
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                SmartBridge is an early-stage technology startup powered by standardized software economics. We build, own, and operate proprietary multi-tenant cloud platforms—not agency or bespoke consulting services.
+              </p>
+            </div>
+          </FadeIn>
+
+          <StaggerContainer className="grid md:grid-cols-3 gap-8">
+            <StaggerItem>
+              <div className="p-8 rounded-2xl bg-card border border-border/60 h-full flex flex-col hover:border-primary/40 transition-all shadow-sm">
+                <div className="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                  <TrendingUp className="size-6" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">1. B2B Recurring Subscriptions</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  Predictable MRR/ARR from schools and residential estates subscribing to monthly, termly, or annual SaaS tiers scaled by enrolled students or managed housing units.
+                </p>
+                <div className="mt-auto pt-4 border-t text-xs font-semibold text-primary">
+                  Predictable SaaS Licensing
+                </div>
+              </div>
+            </StaggerItem>
+
+            <StaggerItem>
+              <div className="p-8 rounded-2xl bg-card border border-border/60 h-full flex flex-col hover:border-amber-500/40 transition-all shadow-sm">
+                <div className="size-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5">
+                  <CreditCard className="size-6" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">2. Embedded Financial Rails</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  Automated payment gateway integrations (cards, dynamic virtual accounts, and USSD) earn 0.5% – 1.2% micro-fees on settled tuition, rent, and escrow delivery volumes.
+                </p>
+                <div className="mt-auto pt-4 border-t text-xs font-semibold text-amber-600 dark:text-amber-400">
+                  Fintech Take-Rate Monetization
+                </div>
+              </div>
+            </StaggerItem>
+
+            <StaggerItem>
+              <div className="p-8 rounded-2xl bg-card border border-border/60 h-full flex flex-col hover:border-teal-500/40 transition-all shadow-sm">
+                <div className="size-12 rounded-xl bg-teal-500/10 text-teal-600 flex items-center justify-center mb-5">
+                  <Server className="size-6" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">3. Multi-Node Enterprise Cloud</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  State educational boards and large property developer networks license our enterprise EMIS software under annual cloud contracts for regional data intelligence.
+                </p>
+                <div className="mt-auto pt-4 border-t text-xs font-semibold text-teal-600 dark:text-teal-400">
+                  Enterprise Cloud Contracts
+                </div>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+
+          <FadeIn delay={0.2} className="mt-12 text-center">
+            <Link href="/pricing" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-2")}>
+              View Full Tier Breakdown & Pricing <ArrowRight size={16} />
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="py-24 relative overflow-hidden bg-slate-950 text-white">
         {/* Abstract shapes */}
@@ -398,17 +470,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-primary/10" />
         <div className="container mx-auto px-4 max-w-3xl relative z-10">
           <FadeIn>
-            <h2 className="text-4xl font-bold tracking-tight mb-6">Ready to Digitize Your Operations?</h2>
+            <h2 className="text-4xl font-bold tracking-tight mb-6">Ready to Scale on Our SaaS Platforms?</h2>
             <p className="text-xl text-muted-foreground mb-10">
-              Join dozens of forward-thinking institutions using SmartBridge Apex Solutions to streamline their operations.
+              Join dozens of forward-thinking institutions using SmartBridge cloud software to automate operations and financial workflows.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/contact" className={cn(buttonVariants({ size: "lg", variant: "default" }), "shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1")}>
-                Book a Free Demo
+              <Link href="/pricing" className={cn(buttonVariants({ size: "lg", variant: "default" }), "shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-1")}>
+                Explore SaaS Pricing
               </Link>
-              <a href="tel:+2348068569991" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-all hover:-translate-y-1")}>
-                Call: +234 806 856 9991
-              </a>
+              <Link href="/contact" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "bg-background transition-all hover:-translate-y-1")}>
+                Schedule Product Demo
+              </Link>
             </div>
           </FadeIn>
         </div>

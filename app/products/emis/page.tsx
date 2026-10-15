@@ -177,18 +177,23 @@ export default function EMISPage() {
       <section className="py-24 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
           <FadeIn>
-            <h2 className="text-3xl font-bold mb-6">Custom Enterprise Pricing</h2>
+            <h2 className="text-3xl font-bold mb-6">Enterprise SaaS Platform Licensing</h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              EMIS is tailored to the specific scale and requirements of your educational network, ministry, or state government.
+              EMIS is deployed as a dedicated cloud SaaS platform for educational networks, ministries, and state boards with volume-tiered annual software licensing.
             </p>
             <div className="bg-card p-8 rounded-2xl border border-border/50 shadow-sm max-w-lg mx-auto">
-              <h3 className="text-2xl font-bold mb-4">Get a Custom Quote</h3>
+              <h3 className="text-2xl font-bold mb-4">Annual SaaS Cloud Licensing</h3>
               <p className="text-muted-foreground mb-8">
-                Our enterprise team will work closely with you to understand your requirements, infrastructure, and deployment scope.
+                Includes automated cross-school data aggregation, Google Cloud BigQuery data pipelines, predictive policy analytics, and 99.9% uptime SLA.
               </p>
-              <Link href="/contact" className={cn(buttonVariants({ size: "lg" }), "w-full shadow-md hover:-translate-y-1 transition-transform")}>
-                Contact Enterprise Sales
-              </Link>
+              <div className="flex flex-col gap-3">
+                <Link href="/contact" className={cn(buttonVariants({ size: "lg" }), "w-full shadow-md hover:-translate-y-1 transition-transform")}>
+                  Request Enterprise SaaS Licensing
+                </Link>
+                <Link href="/pricing" className={cn(buttonVariants({ variant: "outline" }), "w-full text-xs")}>
+                  View All Product SaaS Tiers &rarr;
+                </Link>
+              </div>
             </div>
           </FadeIn>
         </div>

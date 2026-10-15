@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -13,11 +12,9 @@ import {
   Wallet, 
   Sparkles, 
   ShieldCheck, 
-  Clock, 
   Cpu, 
   Smartphone, 
-  Layers,
-  ExternalLink
+  Layers
 } from "lucide-react";
 
 export default function DispatchProductPage() {
